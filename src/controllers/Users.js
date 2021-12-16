@@ -29,7 +29,6 @@ const login = (req, res) => {
     .then((user) => {
         if(!user) {
            return res.status(httpStatus.NOT_FOUND).send({ message: "User not found!"});
-           //return yazmazsak alttakini de doner
         }
         user = {
             ...user.toObject(),//user in icindeki her seyi bunun icerisine aktar, ek olarak tokens obj olustur
