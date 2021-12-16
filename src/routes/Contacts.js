@@ -1,7 +1,7 @@
-const validate = require('../middlewares/validate'); //validate middleware
+const validate = require('../middlewares/validate'); 
 const authenticate = require('../middlewares/authorization');
 
-const validationSchemas = require('../validations/Contacts');//validations
+const validationSchemas = require('../validations/Contacts');
 
 const express = require('express');
 const { create, index, findContact, deleteContact, update } = require('../controllers/Contacts'); //Fonksiyonlari al
