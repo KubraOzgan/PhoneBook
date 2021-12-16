@@ -6,11 +6,9 @@ const logger = winston.createLogger({
   defaultMeta: { service: 'contact-service' },
   transports: [
    
-    //winston iletim yontemlerinden File i kullan demek.
     new winston.transports.File({ filename: 'src/logs/contacts/error.log', level: 'error' }), //Auri ayri kaydetmek istiyorsak level belirtmeliyiz.
     new winston.transports.File({ filename: 'src/logs/contacts/info.log', level: 'info' }), 
     new winston.transports.File({ filename: 'src/logs/contacts/combined.log' }), //error + info
-    //Console a yazmak icin : new winston.transports.Console()
 ],
 });
  
