@@ -1,0 +1,28 @@
+dotenv: env tutmak icin
+cors:
+helmet: header üzerinden gelecek saldırıları engellemek icin kullanılır
+http-status
+
+Klasörler
+controllers: Mantıksal süreçleri yönetecek şeyler, route dan gelen istekleri karşılaştır
+ve db ye bağlan. Bağlandığı andaki adaptör services.
+Services: Db ye models üzerinden bağlan.
+
+Yani route - contollers - services - models - db bağlantısı şeklinde ilerler.
+Db den gelen sonuç üzerinden geri dön ve kullanıcıya bilgiyi ver.
+
+Scripts: Loglama işlemleri gerçekleşecek. events, logger, utils
+
+Config: Enviroment ayarları tutulacak.
+İçerisindeki INDEX.JS ile tüm config dosyaları çalışacak.
+
+MongoDb yoksa Docker ile MongoDb'nin containerı ayağa kaldırılıp bağlantı sağlanabilir.
+
+
+Joi ile Validation:
+Schema ile ana yapı oluşturulur. Tüm istekler için oluşturulacak.
+Validation işlemi sonrası yönlendirme için de MIDDLEWARE kullanılacak.
+Middleware ile istek validate oluyorsa devam et, yoksa geri döndür.
+Middlewareler routin seviyesinde is gorur.
+
+Fonksiyonların çalışması: route - controller - service
