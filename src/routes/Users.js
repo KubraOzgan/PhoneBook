@@ -4,7 +4,7 @@ const validate = require('../middlewares/validate');
 const validationSchemas = require('../validations/Users')
 
 const express = require('express');
-const { create, index, login } = require('../controllers/Users'); //Fonksiyonlari al
+const { create, index, login } = require('../controllers/Users'); 
 
 const router = express.Router();
 
