@@ -10,7 +10,7 @@ const list = () => {
 }
 
 const loginUser = (loginData) => {
-    return User.findOne(loginData); //findOne icindekine gore sorgu yapar, req.body ile email ve password geliyor.
+    return User.findOne(loginData); 
 }
 
 module.exports = {
