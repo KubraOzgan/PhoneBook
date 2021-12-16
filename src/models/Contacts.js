@@ -18,4 +18,4 @@ ContactSchema.post('save', (doc) => {
 
 })
 
-module.exports = Mongoose.model('contact', ContactSchema); //collection name: contact
+module.exports = Mongoose.model('contact', ContactSchema); 
